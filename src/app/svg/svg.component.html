@@ -1,0 +1,27 @@
+<svg height="250" width="200" style="margin-top:20; margin-left:20;" (click)="rect()">
+    <rect width="120" height="120" style="fill:rgb(119,255,51);" />
+</svg>
+
+<svg height="250" width="200" (click)="circle()">
+    <circle cx="70" cy="70" r="60" fill="red" />
+</svg>
+
+<svg height="240" width="200" (click)="triangle()">
+    <path d="M100 0 L20 100 L175 100 Z" style="fill:blue;" />
+    <!-- <path d="M150 0 L20 200 L275 200 Z" style="fill:blue;" /> -->
+</svg>
+
+<div class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name">Selected shape_name:</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="name" name="shape_name" value={{name}} READONLY>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="id">Selected shape_id:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="id" name="shape_id" value={{id}} READONLY>
+      </div>
+    </div>
+</div>
